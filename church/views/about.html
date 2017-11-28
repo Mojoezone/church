@@ -1,0 +1,15 @@
+<extends src='layout.html'>
+    <block name="title">
+        <title>ABOUT</title>
+    </block>
+    <block name='style' type='append'>
+    <link rel="stylesheet" href="about.css" />
+    </block>
+    <block name='heroImage'>
+        <include src="components/about/header.html" />
+    </block>
+    <block name='content'>
+        <include src="components/about/aboutus.html" />
+        <include src="components/about/locationNtime.html" />
+    </block>
+</extends>

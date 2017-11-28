@@ -1,0 +1,45 @@
+body{
+padding: 0;  
+}
+
+header{
+    position: relative;
+}
+.sticky-top{
+    height: 5em;
+    background-color: #FFF;
+}
+.logoImgContainer{
+    width: 3em;
+}
+.logoImg{
+    width: 100%;
+}
+#navbarSupportedContent{
+    position: absolute;
+    right: 0;
+    z-index: 999;
+    padding: 0 1em;
+/*    changed background color as need */
+    background-color: #FFF;
+}
+
+main{
+    padding: 0 !important;
+}
+.videoContainer{
+    padding: 0;
+}
+.currentEvent{
+    padding: 0;
+}
+.curEvHeader{
+    background: url("https://placeimg.com/640/480/any") center center no-repeat;
+    background-size: cover;
+    height: 30em;
+}
+.getConnected{
+       background: url("https://placeimg.com/640/480/any") center center no-repeat;
+    background-size: cover;
+    height: 30em;
+}

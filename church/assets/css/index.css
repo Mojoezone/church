@@ -1,0 +1,7 @@
+@import '../../node_modules/bootstrap/dist/css/bootstrap.min.css';
+@import '_global';
+@import '../../views/index.css';
+@import '../../views/about.css';
+@import '../../views/donation.css';
+@import '../../views/ministries.css';
+@import '../../views/resources.css';

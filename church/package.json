@@ -1,0 +1,44 @@
+{
+  "name": "church-website",
+  "description": "barebone spike static page static page",
+  "version": "0.0.1",
+  "author": "mojoezone@gmail.com",
+  "ava": {
+    "verbose": "true"
+  },
+  "bugs": "https://github.com/mojoezone@gmail.com/church-website/issues",
+  "dependencies": {
+    "reshape-standard": "^3.0.0",
+    "spike-css-standards": "^3.0.0",
+    "spike-js-standards": "^2.0.2",
+    "spike-optimize": "^0.1.2",
+    "spike-page-id": "^1.0.0",
+    "spike": "^2.0.0"
+  },
+  "devDependencies": {
+    "ava": "^0.19.1",
+    "rimraf": "^2.6.1",
+    "snazzy": "^7.0.0",
+    "standard": "^10.0.2",
+      "bootstrap": "^4.0.0-beta.2",
+      "jquery": "^3.2.1",
+      "popper": "^1.12.8",
+      "ajv-keywords": "2.1.1",
+      "ajv": "^5.3.0",
+      "webpack": "^3.8.1"
+      
+  },
+  "homepage": "https://github.com/mojoezone@gmail.com/church-website",
+  "main": "app.js",
+  "private": true,
+  "repository": "https://github.com/mojoezone@gmail.com/church-website",
+  "scripts": {
+    "lint": "standard | snazzy",
+    "precommit": "npm run lint -s",
+    "pretest": "npm run lint -s",
+    "test": "NODE_ENV=test ava",
+    "start": "spike watch",
+    "build": "spike compile",
+    "prod": "NODE_ENV=production spike compile -e production"
+  }
+}

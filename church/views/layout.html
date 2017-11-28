@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='description' content=''>
+    <meta name='author' content='mojoezone@gmail.com'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <block name='title'>
+    </block>
+    <block name='style'>
+        <link rel='stylesheet' href='css/index.css' >
+    </block>
+
+</head>
+
+<body>
+<!--  sticky-nav hide header when it on the home page, active when scroll-->
+    <header class="container-fluid sticky-top">
+        <block name='header'>
+            <include src="components/mainNav.html" />
+            <include src="components/nav.html" />
+        </block>
+    </header>
+<block name='heroImage'></block>
+    <main id='{{ pageId }}' class="clearfix container-fluid">
+        <block name='content'></block>
+    </main>
+    <footer class="clearfix container-fluid bg-dark text-white mt-5">
+        <block name='footer'>
+            <include src="components/footer.html" />
+            <p class="clearfix small mb-0 text-center">2017 MK ALRIGHT RESERVED</p>
+        </block>
+    </footer>
+    <block name='javascript'>
+        <script src='js/main.js' defer></script>
+    </block>
+</body>
+
+</html>

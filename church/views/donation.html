@@ -1,0 +1,34 @@
+<extends src='layout.html'>
+    <block name='title'>
+        <title>Donation</title>
+    </block>
+    <block name='heroImage'>
+     <include src='components/donation/header.html' />
+    </block>
+    <block name='content'>
+        <div class="donations container mt-5 pt-5 pb-5">
+            <div class="mb-5">
+                <h2>DONATION</h2>
+                <p>All donations are tax deductable.</p>
+            </div>
+            <div>
+<!--         hidden form unless click       -->
+                <div class="donateCash mt-5">
+                    <div class="creditCard">
+                        <include src='components/donation/creditCard.html' />
+                    </div>
+                </div>
+                <div class="donateItems mt-5">
+                 <div class="items">
+                        <include src='components/donation/donateItems.html' />
+                    </div>
+                </div>
+                <div class="donateVehical mt-5">
+                   <div class="vehicle">
+                        <include src='components/donation/donateVehicle.html' />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </block>
+</extends>

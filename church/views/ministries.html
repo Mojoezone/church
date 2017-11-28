@@ -1,0 +1,12 @@
+<extends src='layout.html'>
+    <block name="title">
+        <title>Ministries</title>
+    </block>
+    <block name='heroImage'>
+        <include src='components/ministries/header.html' />
+    </block>
+    <block name='content'>
+<!--   loop events from database     -->
+        <include src='components/ministries/ministries.html' />
+    </block>
+</extends>

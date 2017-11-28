@@ -1,0 +1,17 @@
+<extends src='layout.html'>
+    <block name="title">
+        <title>Home</title>
+    </block>
+    <block name='style' type='append'>
+        <link rel="stylesheet" href="index.css">
+    </block>
+    <block name='content'>
+<!--    if more than needed use excerpt function to limit the amount of contents    -->
+        <include src='components/video.html' />
+        <include src='components/welcomeMessage.html' />
+        <include src='components/currentEvent.html' />
+        <include src='components/ministries/ministries.html' />
+        <include src='components/getConnected.html' />
+        <include src='components/events.html' />
+    </block>
+</extends>
